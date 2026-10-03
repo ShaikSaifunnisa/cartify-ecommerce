@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Story — CARTIFY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce-bar">Free shipping on orders over <strong>₹999</strong> &nbsp;|&nbsp; Easy 7-day returns &nbsp;|&nbsp; Secure checkout</div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">CART<span>IFY</span></a>
+    <nav class="main-nav">
+      <a href="shop.html">Shop All</a>
+      <a href="shop.html?cat=Clothing">Clothing</a>
+      <a href="shop.html?cat=Footwear">Footwear</a>
+      <a href="shop.html?cat=Beauty">Beauty</a>
+      <a href="shop.html?cat=Electronics">Electronics</a>
+      <a href="about.html" class="active">Our Story</a>
+    </nav>
+    <form class="header-search" action="shop.html" method="get">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" name="search" placeholder="Search products...">
+    </form>
+    <div class="header-actions">
+      <a href="account.html" class="account-link" id="auth-slot">Login</a>
+      <a href="cart.html" class="cart-link">Cart <span class="cart-count" data-cart-count>0</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<div class="wrap breadcrumb"><a href="index.html">Home</a> / Our Story</div>
+
+<main>
+  <section class="wrap about-hero">
+    <div class="hero-eyebrow">Our Story</div>
+    <h1>We got tired of ordering from five different apps.</h1>
+    <p>CARTIFY started in 2022 with a simple complaint: why does buying a t-shirt, a face serum, and a phone charger mean three different apps, three different logins, and three different deliveries? We built one store instead — clothing, footwear, beauty, home essentials and electronics, picked by one team, shipped from one cart.</p>
+  </section>
+
+  <section class="wrap about-grid">
+    <img src="https://loremflickr.com/400/540/warehouse,packing/all?lock=9201" alt="Order packing">
+    <img src="https://loremflickr.com/400/540/delivery,package/all?lock=9202" alt="Delivery">
+    <img src="https://loremflickr.com/400/540/customer,unboxing/all?lock=9203" alt="Customer unboxing an order">
+  </section>
+
+  <section class="wrap values-grid">
+    <div>
+      <h4>Curated, not endless</h4>
+      <p>We'd rather list 25 products we trust across every category than 25,000 we haven't checked.</p>
+    </div>
+    <div>
+      <h4>One cart, one checkout</h4>
+      <p>Clothing, electronics, beauty — all in the same order, the same delivery window, the same support line.</p>
+    </div>
+    <div>
+      <h4>Real people behind returns</h4>
+      <p>No chatbot maze. If something's wrong with your order, a real person sorts it out.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <blockquote>"We buy groceries, clothes and electronics across different apps — we shouldn't have to for everything else too."</blockquote>
+      <cite>— Founder's note, 2022</cite>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2026 CARTIFY</span>
+      <span>Visa &nbsp;·&nbsp; Mastercard &nbsp;·&nbsp; UPI &nbsp;·&nbsp; Cash on Delivery</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
