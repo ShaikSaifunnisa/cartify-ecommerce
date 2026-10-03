@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CARTIFY — Everything you need, in one place</title>
+<meta name="description" content="Clothing, footwear, beauty, home and electronics — all in one store.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce-bar">Free shipping on orders over <strong>₹999</strong> &nbsp;|&nbsp; Easy 7-day returns &nbsp;|&nbsp; Secure checkout</div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">CART<span>IFY</span></a>
+    <nav class="main-nav">
+      <a href="shop.html">Shop All</a>
+      <a href="shop.html?cat=Clothing">Clothing</a>
+      <a href="shop.html?cat=Footwear">Footwear</a>
+      <a href="shop.html?cat=Beauty">Beauty</a>
+      <a href="shop.html?cat=Electronics">Electronics</a>
+      <a href="about.html">Our Story</a>
+    </nav>
+    <form class="header-search" action="shop.html" method="get">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" name="search" placeholder="Search products...">
+    </form>
+    <div class="header-actions">
+      <a href="account.html" class="account-link" id="auth-slot">Login</a>
+      <a href="cart.html" class="cart-link">Cart <span class="cart-count" data-cart-count>0</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<div class="wrap trust-strip">
+  <div class="trust-item"><span class="icon">🚚</span><div><strong>Free shipping</strong>On orders over ₹999</div></div>
+  <div class="trust-item"><span class="icon">↩️</span><div><strong>Easy returns</strong>7-day return window</div></div>
+  <div class="trust-item"><span class="icon">🔒</span><div><strong>Secure checkout</strong>Encrypted payments</div></div>
+  <div class="trust-item"><span class="icon">⭐</span><div><strong>4.4 average rating</strong>Across 25,000+ reviews</div></div>
+</div>
+
+<main>
+  <section class="wrap hero">
+    <div>
+      <div class="hero-eyebrow">Everything you need, in one place</div>
+      <h1>One store. Everything that goes in your cart.</h1>
+      <p>Clothing, footwear, beauty, home essentials and electronics — curated and shipped from a single, straightforward store.</p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn">Shop all products</a>
+        <a href="about.html" class="btn btn-outline">Our story</a>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <img src="https://loremflickr.com/900/1100/shopping,retail/all?lock=9001" alt="Shopping and retail">
+      <div class="hero-caption">"Ordered Monday, on my desk by Wednesday — every time." — Verified buyer</div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding: 0 0 64px;">
+    <div class="cat-grid">
+      <a class="cat-card" href="shop.html?cat=Clothing">
+        <img src="https://loremflickr.com/400/540/clothing,fashion/all?lock=9101" alt="Clothing">
+        <span>Clothing</span>
+      </a>
+      <a class="cat-card" href="shop.html?cat=Footwear">
+        <img src="https://loremflickr.com/400/540/shoes,footwear/all?lock=9102" alt="Footwear">
+        <span>Footwear</span>
+      </a>
+      <a class="cat-card" href="shop.html?cat=Beauty">
+        <img src="https://loremflickr.com/400/540/cosmetics,beauty/all?lock=9103" alt="Beauty">
+        <span>Beauty</span>
+      </a>
+      <a class="cat-card" href="shop.html?cat=Home%20%26%20Kitchen">
+        <img src="https://loremflickr.com/400/540/kitchen,home/all?lock=9104" alt="Home & Kitchen">
+        <span>Home & Kitchen</span>
+      </a>
+      <a class="cat-card" href="shop.html?cat=Electronics">
+        <img src="https://loremflickr.com/400/540/electronics,gadget/all?lock=9105" alt="Electronics">
+        <span>Electronics</span>
+      </a>
+      <a class="cat-card" href="shop.html?cat=Accessories">
+        <img src="https://loremflickr.com/400/540/accessories,fashion/all?lock=9106" alt="Accessories">
+        <span>Accessories</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-head">
+      <div>
+        <h2>Bestsellers</h2>
+        <p>The six products our customers reorder the most, across every category.</p>
+      </div>
+      <a href="shop.html" class="section-link">View all products</a>
+    </div>
+    <div class="product-grid" id="bestsellers"></div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <blockquote>"One store for the stuff I actually run out of — t-shirts, chargers, skincare, all of it."</blockquote>
+      <cite>— Verified buyer, CARTIFY</cite>
+    </div>
+  </section>
+
+  <section class="wrap section" style="border-top:none;">
+    <div class="section-head">
+      <div>
+        <h2>New arrivals</h2>
+        <p>Freshly added across clothing, electronics, and home.</p>
+      </div>
+      <a href="shop.html" class="section-link">View all products</a>
+    </div>
+    <div class="product-grid" id="new-arrivals"></div>
+  </section>
+
+  <section class="wrap newsletter">
+    <div>
+      <h3>Get first look at new drops</h3>
+      <p>One email a month. Restocks and new arrivals. No spam.</p>
+    </div>
+    <form class="news-form">
+      <input type="email" required placeholder="you@example.com">
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">CART<span>IFY</span></div>
+        <p>One store for clothing, footwear, beauty, home, and electronics.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?cat=Clothing">Clothing</a></li>
+          <li><a href="shop.html?cat=Footwear">Footwear</a></li>
+          <li><a href="shop.html?cat=Beauty">Beauty</a></li>
+          <li><a href="shop.html?cat=Home%20%26%20Kitchen">Home & Kitchen</a></li>
+          <li><a href="shop.html?cat=Electronics">Electronics</a></li>
+          <li><a href="shop.html?cat=Accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Shipping & returns</a></li>
+          <li><a href="#">Size guide</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Track an order</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CARTIFY</span>
+      <span>Visa &nbsp;·&nbsp; Mastercard &nbsp;·&nbsp; UPI &nbsp;·&nbsp; Cash on Delivery</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const bestsellerIds = ["cl-02","fw-01","bt-01","el-01","hk-01","ac-03"];
+  renderProductCards(document.getElementById("bestsellers"), PRODUCTS.filter(p => bestsellerIds.includes(p.id)));
+
+  const newArrivalIds = ["cl-05","fw-04","bt-04","hk-04","el-04","ac-04"];
+  renderProductCards(document.getElementById("new-arrivals"), PRODUCTS.filter(p => newArrivalIds.includes(p.id)));
+</script>
+</body>
+</html>
